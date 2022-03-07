@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery Clone</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="full-img" id="fullImgBox">
+        <img src="images/nature background1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+
+    
+    <div class="img-gallery">
+        <img src="images/nature background1.jpg" onclick="openFullImg(this.src)">
+        <img src="images/nature background2.jpg" onclick="openFullImg(this.src)">
+        <img src="images/nature background3.jpg" onclick="openFullImg(this.src)">
+        <img src="images/nature background4.jpg" onclick="openFullImg(this.src)">
+        <img src="images/nature background5.jpg" onclick="openFullImg(this.src)">
+        <img src="images/nature background6.jpg" onclick="openFullImg(this.src)">
+        <img src="images/nature background7.jpg" onclick="openFullImg(this.src)">
+        <img src="images/nature background8.jpg" onclick="openFullImg(this.src)">
+        <img src="images/nature background9.jpg" onclick="openFullImg(this.src)">
+        <img src="images/nature background10.jpg" onclick="openFullImg(this.src)">
+        <img src="images/nature background11.jpg" onclick="openFullImg(this.src)">
+        <img src="images/nature background12.jpg" onclick="openFullImg(this.src)">
+    </div>
+
+
+    <script>
+        var fullImgBox=document.getElementById("fullImgBox");
+        var fullImg=document.getElementById("fullImg");
+
+
+
+        function openFullImg(pic)
+        {
+            fullImgBox.style.display="flex";
+            fullImg.src=pic;
+        }
+
+
+        function closeFullImg()
+        {
+            fullImgBox.style.display="none";
+        }
+    </script>
+</body>
+</html>
